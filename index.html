@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<!-- Declara el documento como HTML5 -->
+<html lang="es">
+<!-- Establece el idioma de la página como español -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Define la codificación de caracteres como UTF-8 -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hace la página responsiva en dispositivos móviles -->
+
+    <title>Tutorial Básico de HTML</title>
+    <!-- Establece el título de la página que aparece en la pestaña del navegador -->
+
+    <style>
+        /* Estilos generales para toda la página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* Encabezado */
+        header {
+            background: #0571a6;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        /* Navegación */
+        nav {
+            background: #012347d3;
+            padding: 1rem;
+        }
+
+        nav h2 {
+            color: #fff;
+            margin-bottom: 0.5rem;
+        }
+
+        nav ol {
+            padding: 0;
+            list-style: decimal;
+        }
+
+        nav ol li a {
+            color: #42e3ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ol li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Sección principal */
+        main {
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+            background: #fff;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            margin-top: 0;
+        }
+
+        section img {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto 1rem;
+        }
+
+        /* Tabla de etiquetas */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2rem;
+        }
+
+        table th,
+        table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #0571a6;
+            color: white;
+        }
+
+        /* Pie de página */
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #0571a6;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Encabezado principal de la página -->
+    <header>
+        <h1>Tutorial Básico de HTML</h1>
+        <p>Aprende los conceptos y etiqutas fundamentales de HTML.</p>
+    </header>
+
+    <!-- Navegación principal con enlaces a las secciones -->
+    <nav>
+        <h2>Contenido del Tutorial</h2>
+        <ol>
+            <li><a href="#tema1">¿Qué es HTML?</a></li>
+            <li><a href="#tema2">Estructura básica</a></li>
+            <li><a href="#tema3">Etiquetas principales</a></li>
+        </ol>
+    </nav>
+
+    <!-- Contenido principal de la página -->
+    <main>
+        <!-- Sección: Introducción a HTML -->
+        <section id="tema1">
+            <h2>¿Qué es HTML?</h2>
+            <p>HTML, o Lenguaje de Marcado de Hipertexto, es el estándar para crear páginas web. Es el esqueleto de
+                cualquier sitio web.</p>
+        </section>
+
+        <!-- Sección: Estructura básica de un documento HTML -->
+        <section id="tema2">
+            <h2>Estructura básica</h2>
+            <p>Una página HTML se compone de elementos como <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code> y
+                <code>&lt;body&gt;</code>.</p>
+        </section>
+
+        <!-- Sección: Descripción de etiquetas principales -->
+        <section id="tema3">
+            <h2>Etiquetas principales</h2>
+            <p>HTML utiliza diferentes etiquetas para definir el contenido y estructura de una página web. A
+                continuación, algunas etiquetas principales y sus funciones:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Etiqueta</th>
+                        <th>Función</th>
+                        <th>Ejemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Cada fila de la tabla describe una etiqueta HTML -->
+                    <tr>
+                        <td>&lt;h1&gt; - &lt;h6&gt;</td>
+                        <td>Define encabezados de diferentes niveles.</td>
+                        <td><code>&lt;h1&gt;Título Principal&lt;/h1&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;p&gt;</td>
+                        <td>Crea un párrafo de texto.</td>
+                        <td><code>&lt;p&gt;Este es un párrafo.&lt;/p&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;a&gt;</td>
+                        <td>Crea un enlace a otra página o recurso.</td>
+                        <td><code>&lt;a href="https://example.com"&gt;Visitar&lt;/a&gt;</code></td>
+                    </tr>
+                    <!-- Más etiquetas aquí -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Creado por Carlos Eduardo Mora Herrera - 2024</p>
+    </footer>
+</body>
+
+</html>
