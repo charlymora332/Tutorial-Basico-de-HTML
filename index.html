@@ -1,20 +1,12 @@
 <!DOCTYPE html>
-<!-- Declara el documento como HTML5 -->
 <html lang="es">
-<!-- Establece el idioma de la página como español -->
 
 <head>
     <meta charset="UTF-8">
-    <!-- Define la codificación de caracteres como UTF-8 -->
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Hace la página responsiva en dispositivos móviles -->
-
     <title>Tutorial Básico de HTML</title>
-    <!-- Establece el título de la página que aparece en la pestaña del navegador -->
-
     <style>
-        /* Estilos generales para toda la página */
+        /* Estilos generales */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -56,6 +48,7 @@
             color: #42e3ff;
             text-decoration: none;
             font-weight: bold;
+
         }
 
         nav ol li a:hover {
@@ -115,13 +108,11 @@
 </head>
 
 <body>
-    <!-- Encabezado principal de la página -->
     <header>
         <h1>Tutorial Básico de HTML</h1>
         <p>Aprende los conceptos y etiqutas fundamentales de HTML.</p>
     </header>
 
-    <!-- Navegación principal con enlaces a las secciones -->
     <nav>
         <h2>Contenido del Tutorial</h2>
         <ol>
@@ -131,23 +122,18 @@
         </ol>
     </nav>
 
-    <!-- Contenido principal de la página -->
     <main>
-        <!-- Sección: Introducción a HTML -->
         <section id="tema1">
             <h2>¿Qué es HTML?</h2>
             <p>HTML, o Lenguaje de Marcado de Hipertexto, es el estándar para crear páginas web. Es el esqueleto de
                 cualquier sitio web.</p>
         </section>
 
-        <!-- Sección: Estructura básica de un documento HTML -->
         <section id="tema2">
             <h2>Estructura básica</h2>
             <p>Una página HTML se compone de elementos como <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code> y
                 <code>&lt;body&gt;</code>.</p>
         </section>
-
-        <!-- Sección: Descripción de etiquetas principales -->
         <section id="tema3">
             <h2>Etiquetas principales</h2>
             <p>HTML utiliza diferentes etiquetas para definir el contenido y estructura de una página web. A
@@ -161,7 +147,6 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- Cada fila de la tabla describe una etiqueta HTML -->
                     <tr>
                         <td>&lt;h1&gt; - &lt;h6&gt;</td>
                         <td>Define encabezados de diferentes niveles.</td>
@@ -177,13 +162,82 @@
                         <td>Crea un enlace a otra página o recurso.</td>
                         <td><code>&lt;a href="https://example.com"&gt;Visitar&lt;/a&gt;</code></td>
                     </tr>
-                    <!-- Más etiquetas aquí -->
+                    <tr>
+                        <td>&lt;img&gt;</td>
+                        <td>Inserta una imagen.</td>
+                        <td><code>&lt;img src="imagen.png" alt="Texto alternativo"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;ul&gt; - &lt;ol&gt;</td>
+                        <td>Crea listas desordenadas y ordenadas respectivamente.</td>
+                        <td><code>&lt;ul&gt;&lt;li&gt;Ítem&lt;/li&gt;&lt;/ul&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;div&gt;</td>
+                        <td>Define un contenedor genérico para agrupar contenido.</td>
+                        <td><code>&lt;div&gt;Contenido aquí&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;span&gt;</td>
+                        <td>Aplica estilos o agrupa texto dentro de una línea.</td>
+                        <td><code>&lt;span style="color:red"&gt;Texto en rojo&lt;/span&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;table&gt;, &lt;tr&gt;, &lt;td&gt;, &lt;th&gt;</td>
+                        <td>Crea tablas, filas y celdas para organizar datos.</td>
+                        <td><code>&lt;table&gt;&lt;tr&gt;&lt;td&gt;Dato&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;form&gt;</td>
+                        <td>Crea un formulario para recolectar datos del usuario.</td>
+                        <td><code>&lt;form&gt;&lt;input type="text"&gt;&lt;/form&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input&gt;</td>
+                        <td>Crea campos interactivos para entrada de datos.</td>
+                        <td><code>&lt;input type="text" placeholder="Escribe aquí"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;button&gt;</td>
+                        <td>Crea un botón interactivo.</td>
+                        <td><code>&lt;button&gt;Enviar&lt;/button&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;video&gt;</td>
+                        <td>Inserta un video con controles.</td>
+                        <td><code>&lt;video src="video.mp4" controls&gt;&lt;/video&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;audio&gt;</td>
+                        <td>Inserta un audio con controles.</td>
+                        <td><code>&lt;audio src="audio.mp3" controls&gt;&lt;/audio&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;header&gt;</td>
+                        <td>Define la cabecera de una sección o página.</td>
+                        <td><code>&lt;header&gt;Encabezado&lt;/header&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;footer&gt;</td>
+                        <td>Define el pie de página.</td>
+                        <td><code>&lt;footer&gt;Pie de página&lt;/footer&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;article&gt;</td>
+                        <td>Define contenido independiente como artículos.</td>
+                        <td><code>&lt;article&gt;Artículo aquí&lt;/article&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;section&gt;</td>
+                        <td>Define una sección temática dentro de la página.</td>
+                        <td><code>&lt;section&gt;Sección aquí&lt;/section&gt;</code></td>
+                    </tr>
                 </tbody>
             </table>
         </section>
+
     </main>
 
-    <!-- Pie de página -->
     <footer>
         <p>Creado por Carlos Eduardo Mora Herrera - 2024</p>
     </footer>
